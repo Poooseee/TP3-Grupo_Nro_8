@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace TP3_GRUPO_8
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Inicio : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void btnInicio_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Inicio.aspx");
         }
     }
 }
