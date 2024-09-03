@@ -18,12 +18,12 @@
 &nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtNombreLocalidad" runat="server" Width="147px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="lblMensajeIngreseLocalidad" runat="server"></asp:Label>
-&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;<asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtNombreLocalidad" ValidationGroup="grupo1">ingrese localidad</asp:RequiredFieldValidator>
+            &nbsp;
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="BtnGLocalidad" runat="server" Height="22px" Text="Guardar Localidad" Width="119px" OnClick="BtnGLocalidad_Click" />
+            <asp:Button ID="BtnGLocalidad" runat="server" Height="22px" Text="Guardar Localidad" Width="119px" OnClick="BtnGLocalidad_Click" ValidationGroup="grupo1" />
             <br />
             <br />
             <br />

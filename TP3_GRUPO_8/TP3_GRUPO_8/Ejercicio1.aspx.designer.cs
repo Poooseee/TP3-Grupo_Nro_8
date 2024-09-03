@@ -51,13 +51,13 @@ namespace TP3_GRUPO_8
         protected global::System.Web.UI.WebControls.TextBox txtNombreLocalidad;
 
         /// <summary>
-        /// Control lblMensajeIngreseLocalidad.
+        /// Control rfvLocalidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensajeIngreseLocalidad;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLocalidad;
 
         /// <summary>
         /// Control BtnGLocalidad.

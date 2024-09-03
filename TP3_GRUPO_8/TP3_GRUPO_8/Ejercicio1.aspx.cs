@@ -21,14 +21,7 @@ namespace TP3_GRUPO_8
 
         protected void BtnGLocalidad_Click(object sender, EventArgs e)
         {
-            if(txtNombreLocalidad.Text.Trim().Length > 0)
-            {
-                lblMensajeIngreseLocalidad.Text = "";
-            }
-            else
-            {
-                lblMensajeIngreseLocalidad.Text = "Ingrese Localidad";
-            }
+            
         }
     }
 }
