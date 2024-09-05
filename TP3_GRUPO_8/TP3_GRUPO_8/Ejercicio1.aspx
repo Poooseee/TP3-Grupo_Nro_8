@@ -19,11 +19,12 @@
             <asp:TextBox ID="txtNombreLocalidad" runat="server" Width="147px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;<asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtNombreLocalidad" ValidationGroup="grupo1">Ingrese localidad</asp:RequiredFieldValidator>
+            <asp:Label ID="lblLocalidadRepetida" runat="server"></asp:Label>
             &nbsp;
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="BtnGLocalidad" runat="server" Height="22px" Text="Guardar Localidad" Width="131px" OnClick="BtnGLocalidad_Click" ValidationGroup="grupo1" />
+            <asp:Button ID="BtnGLocalidad" runat="server" Height="22px" Text="Guardar Localidad" Width="131px" OnClick="BtnGLocalidad_Click1" ValidationGroup="grupo1" />
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -42,6 +43,15 @@
             <asp:TextBox ID="txtContraseña" runat="server" Width="147px"  TextMode="Password"></asp:TextBox>
             <br />
             <br />
+            <br />
+            <br />
+            <br />
+            <br />
+&nbsp;<asp:Label ID="lblLocalidadesLista" runat="server" Text="Localidades: "></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:DropDownList ID="ddlLocalidades" runat="server" Height="16px" Width="190px">
+                <asp:ListItem>--Seleccione una localidad--</asp:ListItem>
+            </asp:DropDownList>
             <br />
             <br />
             <br />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -24,6 +25,23 @@ namespace TP3_GRUPO_8
             
         }
 
-       
+        protected void BtnGLocalidad_Click1(object sender, EventArgs e)
+        {
+            lblLocalidadRepetida.Text = "";
+            foreach (ListItem item in ddlLocalidades.Items)
+            {
+                if(item.Text.ToUpper() == txtNombreLocalidad.Text.ToUpper())
+                {
+                    lblLocalidadRepetida.ForeColor = Color.Red;
+                    lblLocalidadRepetida.Text = "Localidad repetida";
+                    txtNombreLocalidad.Text = "";
+                    return;
+                }
+            }
+
+            ddlLocalidades.Items.Add(txtNombreLocalidad.Text);
+            txtNombreLocalidad.Text = "";
+         
+        }
     }
 }
