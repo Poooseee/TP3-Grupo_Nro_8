@@ -34,22 +34,26 @@
             <br />
 &nbsp;<asp:Label ID="lblUsuario" runat="server" Text="Nombre Usuario: "></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtUsuario" runat="server" Width="147px"></asp:TextBox>
+            <asp:TextBox ID="txtUsuario" runat="server" Width="147px" ValidationGroup="grupo2"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvNombreUsuario" runat="server" ControlToValidate="txtUsuario" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
             <br />
             <br />
-            &nbsp;<asp:Label ID="LbContaseña" runat="server" Text="Contraseña:"></asp:Label>
+            &nbsp;<asp:Label ID="lblContaseña" runat="server" Text="Contraseña:"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtContraseña" runat="server" Width="147px"  TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="txtContraseña" runat="server" Width="147px"  TextMode="Password" ValidationGroup="grupo2"></asp:TextBox>
             <br />
             <br />
+            <asp:Label ID="lblRepetirContraseña" runat="server" Text="Repetir Contraseña:"></asp:Label>
+&nbsp;&nbsp;
+            <asp:TextBox ID="txtRepetirContraseña" runat="server" Width="147px"  TextMode="Password" ValidationGroup="grupo2"></asp:TextBox>
+            <asp:CompareValidator ID="cvContraseña" runat="server" ControlToCompare="txtContraseña" ControlToValidate="txtRepetirContraseña" ValidationGroup="grupo2">Contraseñas Diferentes</asp:CompareValidator>
             <br />
             <br />
             <br />
             <br />
 &nbsp;<asp:Label ID="lblLocalidadesLista" runat="server" Text="Localidades: "></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="ddlLocalidades" runat="server" Height="16px" Width="190px">
+            <asp:DropDownList ID="ddlLocalidades" runat="server" Height="16px" Width="190px" ValidationGroup="grupo2">
                 <asp:ListItem>--Seleccione una localidad--</asp:ListItem>
             </asp:DropDownList>
             <br />
@@ -61,7 +65,7 @@
             <br />
             <br />
             <br />
-            <asp:Button ID="btnInicio" runat="server" OnClick="btnInicio_Click" Text="Ir a Inicio.aspx" />
+            <asp:Button ID="btnInicio" runat="server" OnClick="btnInicio_Click" Text="Ir a Inicio.aspx" ValidationGroup="grupo3" />
             <br />
             <br />
             <br />
