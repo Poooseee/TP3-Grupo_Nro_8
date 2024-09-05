@@ -11,7 +11,7 @@ namespace TP3_GRUPO_8
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            txtContraseña.Text.Trim();
         }
 
         protected void btnInicio_Click(object sender, EventArgs e)
@@ -23,5 +23,7 @@ namespace TP3_GRUPO_8
         {
             
         }
+
+       
     }
 }

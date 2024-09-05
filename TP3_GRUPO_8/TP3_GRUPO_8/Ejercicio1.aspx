@@ -36,6 +36,9 @@
             <asp:TextBox ID="txtUsuario" runat="server" Width="147px"></asp:TextBox>
             <br />
             <br />
+            &nbsp;<asp:Label ID="LbContaseña" runat="server" Text="Contraseña:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtContraseña" runat="server" Width="147px" OnTextChanged="txtContraseña_TextChanged" TextMode="Password"></asp:TextBox>
             <br />
             <br />
             <br />
