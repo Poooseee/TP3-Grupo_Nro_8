@@ -34,11 +34,12 @@
 &nbsp;<asp:Label ID="lblUsuario" runat="server" Text="Nombre Usuario: "></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtUsuario" runat="server" Width="147px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvNombreUsuario" runat="server" ControlToValidate="txtUsuario" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
             <br />
             <br />
             &nbsp;<asp:Label ID="LbContaseña" runat="server" Text="Contraseña:"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtContraseña" runat="server" Width="147px" OnTextChanged="txtContraseña_TextChanged" TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="txtContraseña" runat="server" Width="147px"  TextMode="Password"></asp:TextBox>
             <br />
             <br />
             <br />
