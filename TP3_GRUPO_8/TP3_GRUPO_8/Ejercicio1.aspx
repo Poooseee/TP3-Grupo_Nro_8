@@ -63,12 +63,16 @@
             <asp:RequiredFieldValidator ID="rfvMail" runat="server" ControlToValidate="txtMail" ErrorMessage="RequiredFieldValidator" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
 &nbsp;&nbsp;
             <asp:RegularExpressionValidator ID="revMail" runat="server" ControlToValidate="txtMail" ErrorMessage="RegularExpressionValidator" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="grupo2">Ingrese un mail válido</asp:RegularExpressionValidator>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
             <br />
             <asp:Label ID="lblCodigoPostal" runat="server" Text="Codigo Postal: "></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtCodigoPostal" runat="server"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:RequiredFieldValidator ID="rfvCodigoPostal" runat="server" ControlToValidate="txtCodigoPostal" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
+&nbsp;&nbsp;
+            <asp:RegularExpressionValidator ID="regCodigoPostal" runat="server" ControlToValidate="txtCodigoPostal" ValidationExpression="^\d{4}$" ValidationGroup="grupo2">Debe ingresar un código postal válido</asp:RegularExpressionValidator>
             <br />
             <br />
             <asp:Label ID="lblLocalidadesLista" runat="server" Text="Localidades: "></asp:Label>
