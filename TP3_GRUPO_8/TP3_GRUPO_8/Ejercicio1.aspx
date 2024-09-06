@@ -39,14 +39,14 @@
             &nbsp;&nbsp;
             <asp:TextBox ID="txtUsuario" runat="server" Width="147px" ValidationGroup="grupo2"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;
-            <asp:RequiredFieldValidator ID="rfvNombreUsuario" runat="server" ControlToValidate="txtUsuario" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="rfvNombreUsuario" runat="server" ControlToValidate="txtUsuario" ValidationGroup="grupo2">* Ingrese un nombre de usuario</asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:Label ID="lblContaseña" runat="server" Text="Contraseña:"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtContraseña" runat="server" Width="147px"  TextMode="Password" ValidationGroup="grupo2"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;
-            <asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ControlToValidate="txtContraseña" ErrorMessage="RequiredFieldValidator" ValidationGroup="grupo2">*</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="rfvContraseña" runat="server" ControlToValidate="txtContraseña" ErrorMessage="RequiredFieldValidator" ValidationGroup="grupo2">* Ingrese una contraseña</asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:Label ID="lblRepetirContraseña" runat="server" Text="Repetir Contraseña:"></asp:Label>
@@ -80,12 +80,16 @@
             <asp:DropDownList ID="ddlLocalidades" runat="server" Height="16px" Width="190px" ValidationGroup="grupo2">
                 <asp:ListItem>--Seleccione una localidad--</asp:ListItem>
             </asp:DropDownList>
+            &nbsp;&nbsp;&nbsp;
+            <asp:RequiredFieldValidator ID="rfvCodigoPostal0" runat="server" ControlToValidate="ddlLocalidades" ValidationGroup="grupo2" InitialValue="--Seleccione una localidad--">*</asp:RequiredFieldValidator>
             <br />
             <br />
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="grupo2" />
+            <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="grupo2" OnClick="btnGuardarUsuario_Click" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="lblBienvenido" runat="server"></asp:Label>
             <br />
             <br />
             <br />

@@ -43,5 +43,14 @@ namespace TP3_GRUPO_8
             txtNombreLocalidad.Text = "";
          
         }
+
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e)
+        {
+            string nombre;
+
+            nombre = txtUsuario.Text;
+
+            lblBienvenido.Text = "Bienvenido " + nombre;
+        }
     }
 }
