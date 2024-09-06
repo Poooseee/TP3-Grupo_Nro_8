@@ -69,6 +69,15 @@ namespace TP3_GRUPO_8
         protected global::System.Web.UI.WebControls.Label lblLocalidadRepetida;
 
         /// <summary>
+        /// Control revNombreLocalidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revNombreLocalidad;
+
+        /// <summary>
         /// Control BtnGLocalidad.
         /// </summary>
         /// <remarks>
