@@ -51,6 +51,13 @@ namespace TP3_GRUPO_8
             nombre = txtUsuario.Text;
 
             lblBienvenido.Text = "Bienvenido " + nombre;
+
+            txtUsuario.Text = "";
+            txtContraseña.Text = "";
+            txtRepetirContraseña.Text = "";
+            txtMail.Text = "";
+            txtCodigoPostal.Text = "";
+            ddlLocalidades.SelectedIndex = 0;
         }
     }
 }
