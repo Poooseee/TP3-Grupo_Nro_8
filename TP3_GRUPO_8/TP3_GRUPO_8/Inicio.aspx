@@ -9,8 +9,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="margin-left: 520px">
-            <asp:Label ID="lblInicio" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="32pt" Text="Bienvenido a Inicio.aspx"></asp:Label>
+        <div>
+            <asp:Label ID="lblInicio" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="32pt"></asp:Label>
         </div>
     </form>
 </body>

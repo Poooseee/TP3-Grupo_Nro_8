@@ -11,7 +11,10 @@ namespace TP3_GRUPO_8
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblInicio.Text = "Bienvenido a Inicio.aspx";
+            lblInicio.Font.Bold = true;
+            lblInicio.Font.Italic = true;
+            lblInicio.Font.Size = (32);
         }
     }
 }
